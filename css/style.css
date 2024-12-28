@@ -35,14 +35,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #a6c1b0; /* Muted Teal Border */
+    border-bottom: 2px solid #B8B88D; /* Pastel Olive Green Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #f8c7d4; /* Pastel Pink */
+    border: 5px solid #F8A1A1; /* Salmon Pink */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -54,12 +54,12 @@ header .profile-img:hover {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #a6c1b0; /* Muted Teal */
+    color: #B8B88D; /* Pastel Olive Green */
 }
 
 header .job-title {
     font-size: 1.2rem;
-    color: #f8c7d4; /* Pastel Pink */
+    color: #F8A1A1; /* Salmon Pink */
 }
 
 header nav ul {
@@ -83,8 +83,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #a6c1b0; /* Muted Teal */
-    border-bottom: 2px solid #f8c7d4; /* Pastel Pink */
+    color: #B8B88D; /* Pastel Olive Green */
+    border-bottom: 2px solid #F8A1A1; /* Salmon Pink */
 }
 
 /* Hero Section */
@@ -97,12 +97,12 @@ header nav ul li a:hover {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #a6c1b0; /* Muted Teal */
+    color: #B8B88D; /* Pastel Olive Green */
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #f8c7d4; /* Pastel Pink */
+    color: #F8A1A1; /* Salmon Pink */
 }
 
 /* About Section */
@@ -114,7 +114,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #a6c1b0; /* Muted Teal */
+    color: #B8B88D; /* Pastel Olive Green */
     position: relative;
 }
 
@@ -123,7 +123,7 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #f8c7d4; /* Pastel Pink */
+    background: #F8A1A1; /* Salmon Pink */
     margin: 10px auto;
 }
 
@@ -142,7 +142,7 @@ header nav ul li a:hover {
 
 .project-card {
     background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
-    border: 1px solid #a6c1b0; /* Muted Teal Border */
+    border: 1px solid #B8B88D; /* Pastel Olive Green Border */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -159,7 +159,7 @@ header nav ul li a:hover {
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #a6c1b0; /* Muted Teal */
+    color: #B8B88D; /* Pastel Olive Green */
 }
 
 .project-card p {
@@ -170,7 +170,7 @@ header nav ul li a:hover {
 
 .project-card .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #a6c1b0, #f8c7d4); /* Muted Teal to Pastel Pink */
+    background: linear-gradient(135deg, #B8B88D, #F8A1A1); /* Pastel Olive Green to Salmon Pink */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -180,7 +180,7 @@ header nav ul li a:hover {
 }
 
 .project-card .btn:hover {
-    background: linear-gradient(135deg, #f8c7d4, #a6c1b0); /* Reverse Gradient */
+    background: linear-gradient(135deg, #F8A1A1, #B8B88D); /* Reverse Gradient */
 }
 
 /* Footer */
@@ -190,7 +190,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    border-top: 2px solid #a6c1b0; /* Muted Teal */
+    border-top: 2px solid #B8B88D; /* Pastel Olive Green */
 }
 
 footer ul {
@@ -208,7 +208,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #f8c7d4; /* Pastel Pink */
+    color: #F8A1A1; /* Salmon Pink */
 }
 
 footer p {
