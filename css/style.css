@@ -237,3 +237,26 @@ footer p {
 #contact a:hover {
     color: #1E90FF; /* Blue on hover */
 }
+
+/* Learn More and Download My Resume Section */
+.learn-resume {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.learn-resume p {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.learn-resume a {
+    color: #00FA9A; /* Mint */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-resume a:hover {
+    color: #1E90FF; /* Blue on hover */
+}
