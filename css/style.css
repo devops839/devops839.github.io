@@ -9,7 +9,7 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #2d2d2d, #1e1e1e); /* Dark Grey Gradient */
+    background: linear-gradient(120deg, #1e1e1e, #000000); /* Dark Black Gradient */
     color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #2d2d2d; /* Dark Grey */
+    background-color: #000000; /* Dark Black */
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -196,7 +196,7 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: #2d2d2d; /* Dark Grey */
+    background: #000000; /* Dark Black */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
