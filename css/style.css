@@ -22,7 +22,7 @@ body {
 /* Header Styles */
 header {
     background-color: #1c1c1c; /* Slightly darker charcoal */
-    color: #87ceeb; /* Sky Blue */
+    color: #d1603d; /* Deep Rust */
     padding: 40px 0;
     text-align: center;
 }
@@ -38,12 +38,13 @@ header .profile-img {
 header h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: #ffffff; /* White */
 }
 
 header .job-title {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #d1603d; /* Deep Rust */
+    color: #87ceeb; /* Sky Blue for subtle accent */
 }
 
 header nav ul {
@@ -58,7 +59,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #87ceeb; /* Sky Blue */
+    color: #ffffff; /* White for nav links */
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -75,13 +76,14 @@ header nav ul li a:hover {
 
 h2 {
     font-size: 2rem;
-    color: #d1603d; /* Deep Rust */
+    color: #d1603d; /* Deep Rust for headings */
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    color: #bbbbbb; /* Light Gray */
 }
 
 /* Project List */
@@ -104,13 +106,13 @@ p {
 
 .project-card:hover {
     transform: translateY(-10px);
-    border: 2px solid #87ceeb; /* Sky Blue highlight */
+    border: 2px solid #d1603d; /* Deep Rust highlight */
 }
 
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #87ceeb; /* Sky Blue */
+    color: #d1603d; /* Deep Rust */
 }
 
 .project-card p {
@@ -137,19 +139,19 @@ p {
 /* Footer Styles */
 footer {
     background-color: #1c1c1c; /* Slightly darker charcoal */
-    color: #87ceeb; /* Sky Blue */
+    color: #bbbbbb; /* Light gray for footer text */
     padding: 20px 0;
     text-align: center;
 }
 
 /* Contact Section */
 #contact a {
-    color: #87ceeb; /* Sky Blue for links */
+    color: #d1603d; /* Deep Rust for contact links */
     text-decoration: none;
 }
 
 #contact a:hover {
-    color: #d1603d; /* Deep Rust on hover */
+    color: #87ceeb; /* Sky Blue on hover */
 }
 
 /* Media Queries for Responsiveness */
