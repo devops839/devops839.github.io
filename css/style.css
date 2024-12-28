@@ -9,7 +9,7 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #1e1e1e, #000000); /* Dark Black Gradient */
+    background: linear-gradient(120deg, #1e1e1e, #2d2d2d); /* Dark Black Gradient */
     color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #000000; /* Dark Black */
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Black Gradient */
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Grey */
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Black Gradient */
 }
 
 .hero h1 {
@@ -109,6 +109,7 @@ header nav ul li a:hover {
 .section {
     padding: 60px 0;
     text-align: center;
+    background: linear-gradient(135deg, #2d2d2d, #1e1e1e); /* Dark Black Gradient */
 }
 
 .section h2 {
@@ -136,7 +137,7 @@ header nav ul li a:hover {
 /* Button Styling */
 .btn {
     display: inline-block;
-    background: #00FA9A; /* Mint color */
+    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -151,7 +152,7 @@ header nav ul li a:hover {
 
 /* Specific Button Modifications */
 .about .btn, .project-card .btn {
-    background: #00FA9A; /* Mint color */
+    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
     color: #ffffff;
 }
 
@@ -196,7 +197,7 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: #000000; /* Dark Black */
+    background: linear-gradient(135deg, #2d2d2d, #1e1e1e); /* Dark Black Gradient */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
