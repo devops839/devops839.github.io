@@ -9,8 +9,8 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #e8e8e8, #f0f0f0); /* Light Gray Gradient */
-    color: #333333; /* Dark Gray for contrast */
+    background: linear-gradient(120deg, #2d2d2d, #1e1e1e); /* Dark Charcoal Gradient */
+    color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -29,20 +29,20 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #005f6b; /* Teal Blue */
+    background-color: #2d2d2d; /* Dark Charcoal */
     padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #a6c1b0; /* Muted Teal Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #88d4e0; /* Light Blue */
+    border: 5px solid #f8c7d4; /* Pastel Pink */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -54,12 +54,12 @@ header .profile-img:hover {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #a6c1b0; /* Muted Teal */
 }
 
 header .job-title {
     font-size: 1.2rem;
-    color: #88d4e0; /* Light Blue */
+    color: #f8c7d4; /* Pastel Pink */
 }
 
 header nav ul {
@@ -83,26 +83,26 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #88d4e0; /* Light Blue */
-    border-bottom: 2px solid #88d4e0;
+    color: #a6c1b0; /* Muted Teal */
+    border-bottom: 2px solid #f8c7d4; /* Pastel Pink */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #88d4e0, #f0f0f0); /* Light Blue to Light Gray */
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Charcoal */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #005f6b; /* Teal Blue */
+    color: #a6c1b0; /* Muted Teal */
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #333333;
+    color: #f8c7d4; /* Pastel Pink */
 }
 
 /* About Section */
@@ -114,7 +114,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #005f6b; /* Teal Blue */
+    color: #a6c1b0; /* Muted Teal */
     position: relative;
 }
 
@@ -123,13 +123,13 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #88d4e0; /* Light Blue */
+    background: #f8c7d4; /* Pastel Pink */
     margin: 10px auto;
 }
 
 .section p {
     font-size: 1.1rem;
-    color: #555555; /* Medium Gray */
+    color: #bbbbbb; /* Light Gray */
     margin-bottom: 20px;
 }
 
@@ -141,11 +141,11 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.8); /* Subtle White */
-    border: 1px solid #88d4e0; /* Light Blue Border */
+    background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
+    border: 1px solid #a6c1b0; /* Muted Teal Border */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -153,24 +153,24 @@ header nav ul li a:hover {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #005f6b; /* Teal Blue */
+    color: #a6c1b0; /* Muted Teal */
 }
 
 .project-card p {
     font-size: 0.9rem;
-    color: #555555;
+    color: #bbbbbb;
     margin-bottom: 20px;
 }
 
 .project-card .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #005f6b, #88d4e0); /* Teal to Light Blue */
+    background: linear-gradient(135deg, #a6c1b0, #f8c7d4); /* Muted Teal to Pastel Pink */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -180,16 +180,17 @@ header nav ul li a:hover {
 }
 
 .project-card .btn:hover {
-    background: linear-gradient(135deg, #88d4e0, #005f6b); /* Reverse Gradient */
+    background: linear-gradient(135deg, #f8c7d4, #a6c1b0); /* Reverse Gradient */
 }
 
 /* Footer */
 footer {
-    background: #005f6b;
+    background: #2d2d2d; /* Dark Charcoal */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
     position: relative;
+    border-top: 2px solid #a6c1b0; /* Muted Teal */
 }
 
 footer ul {
@@ -207,7 +208,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #88d4e0; /* Light Blue */
+    color: #f8c7d4; /* Pastel Pink */
 }
 
 footer p {
