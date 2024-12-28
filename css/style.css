@@ -8,8 +8,8 @@
 /* Body and Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #2d2d2d; /* Dark Charcoal */
+    color: #ffffff; /* White for contrast */
     line-height: 1.6;
 }
 
@@ -21,14 +21,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #1c1c1c; /* Slightly darker charcoal */
+    color: #87ceeb; /* Sky Blue */
     padding: 40px 0;
     text-align: center;
-}
-
-header .profile {
-    margin-bottom: 20px;
 }
 
 header .profile-img {
@@ -36,6 +32,7 @@ header .profile-img {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    border: 4px solid #d1603d; /* Deep Rust */
 }
 
 header h1 {
@@ -46,6 +43,7 @@ header h1 {
 header .job-title {
     font-size: 1.2rem;
     font-weight: 500;
+    color: #d1603d; /* Deep Rust */
 }
 
 header nav ul {
@@ -60,14 +58,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #87ceeb; /* Sky Blue */
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #d1603d; /* Deep Rust on hover */
 }
 
 /* Section Styles */
@@ -77,7 +75,7 @@ header nav ul li a:hover {
 
 h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #d1603d; /* Deep Rust */
     margin-bottom: 20px;
 }
 
@@ -86,6 +84,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Project List */
 .project-list {
     display: flex;
     gap: 20px;
@@ -93,50 +92,64 @@ p {
 }
 
 .project-card {
-    background-color: white;
+    background-color: #1c1c1c; /* Slightly darker charcoal */
     border-radius: 8px;
     padding: 20px;
     width: 100%;
     max-width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    color: #ffffff; /* White for text */
 }
 
 .project-card:hover {
     transform: translateY(-10px);
+    border: 2px solid #87ceeb; /* Sky Blue highlight */
 }
 
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #87ceeb; /* Sky Blue */
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #555;
+    color: #bbbbbb; /* Light gray for readability */
 }
 
 .project-card .btn {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
+    background-color: #d1603d; /* Deep Rust */
+    color: #ffffff; /* White for text */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .project-card .btn:hover {
-    background-color: #0056b3;
+    background-color: #872e20; /* Darker Deep Rust */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1c1c1c; /* Slightly darker charcoal */
+    color: #87ceeb; /* Sky Blue */
     padding: 20px 0;
     text-align: center;
+}
+
+/* Contact Section */
+#contact a {
+    color: #87ceeb; /* Sky Blue for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #d1603d; /* Deep Rust on hover */
 }
 
 /* Media Queries for Responsiveness */
