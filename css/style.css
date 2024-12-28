@@ -133,6 +133,32 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #00FA9A; /* Mint color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #1E90FF; /* Blue color for hover effect */
+}
+
+/* Specific Button Modifications */
+.about .btn, .project-card .btn {
+    background: #00FA9A; /* Mint color */
+    color: #ffffff;
+}
+
+.about .btn:hover, .project-card .btn:hover {
+    background: #1E90FF; /* Blue color for hover effect */
+}
+
 /* Project Section */
 .project-list {
     display: grid;
@@ -166,21 +192,6 @@ header nav ul li a:hover {
     font-size: 0.9rem;
     color: #bbbbbb;
     margin-bottom: 20px;
-}
-
-.project-card .btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #1E90FF, #00FA9A); /* Blue to Mint */
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: background 0.3s ease;
-}
-
-.project-card .btn:hover {
-    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Reverse Gradient */
 }
 
 /* Footer */
