@@ -9,40 +9,29 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #000000, #1E90FF); /* Black to Blue Gradient */
+    background: url('images/background.jpg') no-repeat center center fixed; /* Add image as background */
+    background-size: cover; /* Ensures the image covers the entire screen */
     color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Container */
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-
 /* Header */
 header {
-    background-color: #000000; /* Black */
+    background-color: #2d2d2d; /* Dark Charcoal */
     padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #00FA9A; /* Mint Border */
+    border-bottom: 2px solid #ff6f61; /* Coral Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #00FA9A; /* Mint Border */
+    border: 5px solid #ffb6b9; /* Light Coral */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -54,12 +43,12 @@ header .profile-img:hover {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1E90FF; /* Blue */
+    color: #ff6f61; /* Coral */
 }
 
 header .job-title {
     font-size: 1.2rem;
-    color: #00FA9A; /* Mint */
+    color: #ffb6b9; /* Light Coral */
 }
 
 header nav ul {
@@ -74,7 +63,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff; /* White */
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
@@ -83,26 +72,26 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #1E90FF; /* Blue */
-    border-bottom: 2px solid #00FA9A; /* Mint */
+    color: #ff6f61; /* Coral */
+    border-bottom: 2px solid #ffb6b9; /* Light Coral */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #000000, #1E90FF); /* Black to Blue */
+    background: linear-gradient(135deg, #2d2d2d, #1e1e1e); /* Dark Charcoal */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #1E90FF; /* Blue */
+    color: #ff6f61; /* Coral */
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #00FA9A; /* Mint */
+    color: #ffb6b9; /* Light Coral */
 }
 
 /* About Section */
@@ -114,7 +103,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1E90FF; /* Blue */
+    color: #ff6f61; /* Coral */
     position: relative;
 }
 
@@ -123,13 +112,13 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #00FA9A; /* Mint */
+    background: #ffb6b9; /* Light Coral */
     margin: 10px auto;
 }
 
 .section p {
     font-size: 1.1rem;
-    color: #ffffff; /* White */
+    color: #bbbbbb; /* Light Gray */
     margin-bottom: 20px;
 }
 
@@ -141,8 +130,8 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background: rgba(0, 0, 0, 0.1); /* Subtle Black Effect */
-    border: 1px solid #00FA9A; /* Mint Border */
+    background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
+    border: 1px solid #ff6f61; /* Coral Border */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -159,18 +148,18 @@ header nav ul li a:hover {
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #1E90FF; /* Blue */
+    color: #ff6f61; /* Coral */
 }
 
 .project-card p {
     font-size: 0.9rem;
-    color: #ffffff; /* White */
+    color: #bbbbbb;
     margin-bottom: 20px;
 }
 
 .project-card .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #1E90FF, #00FA9A); /* Blue to Mint */
+    background: linear-gradient(135deg, #ff6f61, #ffb6b9); /* Coral to Light Coral */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -180,17 +169,17 @@ header nav ul li a:hover {
 }
 
 .project-card .btn:hover {
-    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Mint to Blue */
+    background: linear-gradient(135deg, #ffb6b9, #ff6f61); /* Reverse Gradient */
 }
 
 /* Footer */
 footer {
-    background: #000000; /* Black */
-    color: #ffffff; /* White */
+    background: #2d2d2d; /* Dark Charcoal */
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     position: relative;
-    border-top: 2px solid #00FA9A; /* Mint Border */
+    border-top: 2px solid #ff6f61; /* Coral */
 }
 
 footer ul {
@@ -202,13 +191,13 @@ footer ul {
 }
 
 footer ul li a {
-    color: #ffffff; /* White */
+    color: #ffffff;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #1E90FF; /* Blue */
+    color: #ffb6b9; /* Light Coral */
 }
 
 footer p {
