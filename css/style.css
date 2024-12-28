@@ -9,7 +9,7 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #2c2c2c; /* Dark Grey */
+    background: linear-gradient(120deg, #2d2d2d, #1e1e1e); /* Dark Grey Gradient */
     color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
@@ -29,20 +29,20 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #2c2c2c; /* Dark Grey */
+    background-color: #2d2d2d; /* Dark Grey */
     padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #00FA9A; /* Mint */
+    border-bottom: 2px solid #1E90FF; /* Blue Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #1E90FF; /* Blue */
+    border: 5px solid #00FA9A; /* Mint */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #2c2c2c, #1e1e1e); /* Dark Grey */
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Grey */
 }
 
 .hero h1 {
@@ -185,12 +185,12 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: #2c2c2c; /* Dark Grey */
+    background: #2d2d2d; /* Dark Grey */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
     position: relative;
-    border-top: 2px solid #00FA9A; /* Mint */
+    border-top: 2px solid #1E90FF; /* Blue Border */
 }
 
 footer ul {
@@ -208,9 +208,21 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #1E90FF; /* Blue */
+    color: #00FA9A; /* Mint */
 }
 
 footer p {
     font-size: 0.9rem;
+}
+
+/* Contact Section */
+#contact a {
+    color: #00FA9A; /* Mint */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #1E90FF; /* Blue on hover */
 }
