@@ -9,8 +9,8 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #2d2d2d, #1e1e1e); /* Dark Charcoal Gradient */
-    color: #ffffff; /* White for text */
+    background: linear-gradient(120deg, #1a1a1a, #333333); /* Dark Black Gradient */
+    color: #d3d3d3; /* Light Grey for text */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -29,20 +29,20 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #2d2d2d; /* Dark Charcoal */
+    background-color: #1a1a1a; /* Dark Black */
     padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #8B3D33; /* Burnt Sienna Border */
+    border-bottom: 2px solid #d3d3d3; /* Light Grey Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #F1E1C6; /* Soft Cream */
+    border: 5px solid #d3d3d3; /* Light Grey */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -54,12 +54,12 @@ header .profile-img:hover {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #8B3D33; /* Burnt Sienna */
+    color: #d3d3d3; /* Light Grey */
 }
 
 header .job-title {
     font-size: 1.2rem;
-    color: #F1E1C6; /* Soft Cream */
+    color: #b0b0b0; /* Slightly darker grey */
 }
 
 header nav ul {
@@ -74,7 +74,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff;
+    color: #d3d3d3;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
@@ -83,26 +83,26 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #8B3D33; /* Burnt Sienna */
-    border-bottom: 2px solid #F1E1C6; /* Soft Cream */
+    color: #ffffff;
+    border-bottom: 2px solid #d3d3d3; /* Light Grey */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #1e1e1e, #2d2d2d); /* Dark Charcoal */
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark Black */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #8B3D33; /* Burnt Sienna */
+    color: #d3d3d3; /* Light Grey */
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #F1E1C6; /* Soft Cream */
+    color: #b0b0b0; /* Slightly darker grey */
 }
 
 /* About Section */
@@ -114,7 +114,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #8B3D33; /* Burnt Sienna */
+    color: #d3d3d3; /* Light Grey */
     position: relative;
 }
 
@@ -123,13 +123,13 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #F1E1C6; /* Soft Cream */
+    background: #d3d3d3; /* Light Grey */
     margin: 10px auto;
 }
 
 .section p {
     font-size: 1.1rem;
-    color: #bbbbbb; /* Light Gray */
+    color: #b0b0b0; /* Slightly darker grey */
     margin-bottom: 20px;
 }
 
@@ -142,7 +142,7 @@ header nav ul li a:hover {
 
 .project-card {
     background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
-    border: 1px solid #8B3D33; /* Burnt Sienna Border */
+    border: 1px solid #d3d3d3; /* Light Grey Border */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -159,19 +159,19 @@ header nav ul li a:hover {
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #8B3D33; /* Burnt Sienna */
+    color: #d3d3d3; /* Light Grey */
 }
 
 .project-card p {
     font-size: 0.9rem;
-    color: #bbbbbb;
+    color: #b0b0b0;
     margin-bottom: 20px;
 }
 
 .project-card .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #8B3D33, #F1E1C6); /* Burnt Sienna to Soft Cream */
-    color: #ffffff;
+    background: linear-gradient(135deg, #333333, #1a1a1a); /* Dark Black to Darker Black */
+    color: #d3d3d3;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -180,17 +180,17 @@ header nav ul li a:hover {
 }
 
 .project-card .btn:hover {
-    background: linear-gradient(135deg, #F1E1C6, #8B3D33); /* Reverse Gradient */
+    background: linear-gradient(135deg, #d3d3d3, #333333); /* Light Grey to Dark Black */
 }
 
 /* Footer */
 footer {
-    background: #2d2d2d; /* Dark Charcoal */
-    color: #ffffff;
+    background: #1a1a1a; /* Dark Black */
+    color: #d3d3d3;
     text-align: center;
     padding: 20px 0;
     position: relative;
-    border-top: 2px solid #8B3D33; /* Burnt Sienna */
+    border-top: 2px solid #d3d3d3; /* Light Grey */
 }
 
 footer ul {
@@ -202,13 +202,13 @@ footer ul {
 }
 
 footer ul li a {
-    color: #ffffff;
+    color: #d3d3d3;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #F1E1C6; /* Soft Cream */
+    color: #ffffff;
 }
 
 footer p {
