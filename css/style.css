@@ -9,7 +9,7 @@
 /* Fonts and Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #000000, #8B0000); /* Black to Red Gradient */
+    background: linear-gradient(120deg, #000000, #1E90FF); /* Black to Blue Gradient */
     color: #ffffff; /* White for text */
     line-height: 1.6;
     overflow-x: hidden;
@@ -35,14 +35,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #8B0000; /* Red Border */
+    border-bottom: 2px solid #00FA9A; /* Mint Border */
 }
 
 header .profile-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 5px solid #8B0000; /* Red Border */
+    border: 5px solid #00FA9A; /* Mint Border */
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -54,12 +54,12 @@ header .profile-img:hover {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
 }
 
 header .job-title {
     font-size: 1.2rem;
-    color: #ffffff; /* White */
+    color: #00FA9A; /* Mint */
 }
 
 header nav ul {
@@ -83,26 +83,26 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #8B0000; /* Red */
-    border-bottom: 2px solid #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
+    border-bottom: 2px solid #00FA9A; /* Mint */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #000000, #8B0000); /* Black to Red */
+    background: linear-gradient(135deg, #000000, #1E90FF); /* Black to Blue */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #ffffff; /* White */
+    color: #00FA9A; /* Mint */
 }
 
 /* About Section */
@@ -114,7 +114,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
     position: relative;
 }
 
@@ -123,7 +123,7 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #8B0000; /* Red */
+    background: #00FA9A; /* Mint */
     margin: 10px auto;
 }
 
@@ -142,7 +142,7 @@ header nav ul li a:hover {
 
 .project-card {
     background: rgba(0, 0, 0, 0.1); /* Subtle Black Effect */
-    border: 1px solid #8B0000; /* Red Border */
+    border: 1px solid #00FA9A; /* Mint Border */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -159,7 +159,7 @@ header nav ul li a:hover {
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
 }
 
 .project-card p {
@@ -170,7 +170,7 @@ header nav ul li a:hover {
 
 .project-card .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #8B0000, #000000); /* Red to Black */
+    background: linear-gradient(135deg, #1E90FF, #00FA9A); /* Blue to Mint */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -180,7 +180,7 @@ header nav ul li a:hover {
 }
 
 .project-card .btn:hover {
-    background: linear-gradient(135deg, #000000, #8B0000); /* Black to Red */
+    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Mint to Blue */
 }
 
 /* Footer */
@@ -190,7 +190,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    border-top: 2px solid #8B0000; /* Red Border */
+    border-top: 2px solid #00FA9A; /* Mint Border */
 }
 
 footer ul {
@@ -208,7 +208,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #8B0000; /* Red */
+    color: #1E90FF; /* Blue */
 }
 
 footer p {
