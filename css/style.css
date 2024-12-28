@@ -8,23 +8,26 @@
 /* Body and Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #2d2d2d; /* Dark Charcoal */
-    color: #ffffff; /* White for contrast */
+    background: linear-gradient(120deg, #2d2d2d, #1c1c1c);
+    color: #ffffff;
     line-height: 1.6;
 }
 
 /* Container */
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header Styles */
 header {
-    background-color: #1c1c1c; /* Slightly darker charcoal */
-    color: #d1603d; /* Deep Rust */
+    background-color: #1c1c1c;
     padding: 40px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .profile-img {
@@ -32,19 +35,24 @@ header .profile-img {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 4px solid #d1603d; /* Deep Rust */
+    border: 5px solid #d1603d;
+    transition: transform 0.3s ease;
+}
+
+header .profile-img:hover {
+    transform: scale(1.1);
 }
 
 header h1 {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #ffffff; /* White */
+    font-weight: bold;
+    color: #d1603d;
 }
 
 header .job-title {
     font-size: 1.2rem;
-    font-weight: 500;
-    color: #87ceeb; /* Sky Blue for subtle accent */
+    color: #87ceeb;
+    margin-bottom: 20px;
 }
 
 header nav ul {
@@ -59,14 +67,18 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff; /* White for nav links */
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #d1603d; /* Deep Rust on hover */
+    background-color: #d1603d;
+    color: #ffffff;
+    border-radius: 4px;
 }
 
 /* Section Styles */
@@ -76,85 +88,94 @@ header nav ul li a:hover {
 
 h2 {
     font-size: 2rem;
-    color: #d1603d; /* Deep Rust for headings */
+    color: #d1603d;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #bbbbbb;
     margin-bottom: 20px;
-    color: #bbbbbb; /* Light Gray */
+    text-align: center;
 }
 
-/* Project List */
+/* Project Section */
 .project-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .project-card {
-    background-color: #1c1c1c; /* Slightly darker charcoal */
-    border-radius: 8px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
     padding: 20px;
-    width: 100%;
-    max-width: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    color: #ffffff; /* White for text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    border: 2px solid #d1603d; /* Deep Rust highlight */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .project-card h3 {
     font-size: 1.5rem;
+    color: #d1603d;
     margin-bottom: 10px;
-    color: #d1603d; /* Deep Rust */
 }
 
 .project-card p {
-    font-size: 1rem;
-    color: #bbbbbb; /* Light gray for readability */
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
 }
 
 .project-card .btn {
     display: inline-block;
-    background-color: #d1603d; /* Deep Rust */
-    color: #ffffff; /* White for text */
+    background-color: #d1603d;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .project-card .btn:hover {
-    background-color: #872e20; /* Darker Deep Rust */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1c1c1c; /* Slightly darker charcoal */
-    color: #bbbbbb; /* Light gray for footer text */
-    padding: 20px 0;
-    text-align: center;
+    background-color: #872e20;
 }
 
 /* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
 #contact a {
-    color: #d1603d; /* Deep Rust for contact links */
+    color: #d1603d;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #contact a:hover {
-    color: #87ceeb; /* Sky Blue on hover */
+    color: #87ceeb;
 }
 
-/* Media Queries for Responsiveness */
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #bbbbbb;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -163,9 +184,5 @@ footer {
 
     header nav ul li {
         margin: 10px 0;
-    }
-
-    .project-list {
-        flex-direction: column;
     }
 }
