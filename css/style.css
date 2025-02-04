@@ -3,20 +3,27 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0D0D0D; /* Dark background */
+    color: #E0E0E0; /* Light text */
 }
 
 /* Container */
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Header Styles */
 header {
     background-color: #000;
-    color: white;
     padding: 20px 0;
+    border-bottom: 2px solid #1E90FF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -25,58 +32,84 @@ header .container {
     align-items: center;
 }
 
-header .profile img {
-    width: 100px;
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 80px;
     border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #00FA9A;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+h1 {
+    font-size: 1.8rem;
+    color: #FFF;
 }
 
-header nav ul {
+.job-title {
+    font-size: 1rem;
+    color: #B0B0B0;
+}
+
+/* Navigation */
+nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav ul li {
+nav ul li {
     margin-left: 20px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #E0E0E0;
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #1E90FF;
 }
 
 /* Section Styles */
 .section {
-    padding: 60px 0;
+    padding: 100px 0 60px;
+    text-align: center;
 }
 
+/* Headings */
 h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    color: #00FA9A;
+    border-bottom: 2px solid #1E90FF;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
 }
 
-/* Button Styling */
+/* Buttons */
 .btn {
     background-color: #1E90FF;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .btn:hover {
     background-color: #4682B4;
+    transform: translateY(-2px);
 }
 
 /* Project List */
@@ -84,50 +117,95 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+/* Project Card */
 .project-card {
     width: calc(33.333% - 20px);
-    background-color: #fff;
+    background-color: #1A1A1A;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 250, 154, 0.2);
     box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(30, 144, 255, 0.3);
 }
 
 .project-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #1E90FF;
 }
 
 .project-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.5;
+    color: #B0B0B0;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Contact Section */
+#contact p {
+    font-size: 1rem;
+}
+
+#contact a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #1E90FF;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .project-card {
         width: calc(50% - 20px);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .project-card {
         width: 100%;
     }
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.2rem;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
