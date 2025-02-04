@@ -51,7 +51,7 @@ nav ul li a:hover {
 
 /* Sections */
 .section {
-    padding: 100px 20px;
+    padding: 120px 20px 80px; /* Adjusted for fixed header */
     text-align: center;
 }
 
