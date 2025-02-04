@@ -4,88 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavan Kalluri - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h2>Hello, I'm Pavan Kalluri</h2>
-            <p>DevOps Engineer | Cloud Enthusiast</p>
-            <a href="Pavan_Resume.pdf" class="resume-btn">Download Resume</a>
+        <div class="container">
+            <div class="profile">
+                <img src="assets/images/image.jpg" alt="Pavan Kalluri" class="profile-img">
+                <h1>Pavan Kalluri | DevOps Engineer | CI/CD & Cloud Expert</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am Pavan Kalluri, a DevOps Engineer with extensive experience in managing cloud infrastructure...</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Pavan Kalluri, a passionate DevOps/DevSecOps engineer with a strong background in building scalable and efficient systems. I specialize in cloud technologies, automation, and continuous integration/deployment. I love working on modern software solutions and collaborating with cross-functional teams to deliver high-quality products.</p>
+            <p><a href="about.html" class="btn">Learn More</a></p>
+            <p><a href="assets/files/pavankalluri_devops_3y+.pdf" class="btn">My Resume</a></p>
+        </div>
     </section>
 
     <section id="projects" class="section">
-        <h2>GitHub Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>ACR_AKS_Pipeline</h3>
-                <p>This Azure DevOps pipeline automates the process of building a Docker image, pushing it to Azure Container Registry (ACR), and deploying it to an Azure Kubernetes Service (AKS) cluster. It triggers on commits to the main branch, builds and pushes the image, then updates the deployment in AKS with the new image tag.</p>
-                <a href="https://github.com/devops839/AD_ACR_AKS_Pipeline" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>AD_ArgoCD_AKS_Project</h3>
-                <p>This pipeline automates the build, scan, and deployment process for microservices in an Azure Kubernetes Service (AKS) cluster using ArgoCD. It includes SonarQube code analysis, Trivy security scans, Docker image builds, and pushes images to Azure Container Registry (ACR). After updating Kubernetes manifests, ArgoCD automatically deploys the application to AKS, with monitoring available through Grafana.</p>
-                <a href="https://github.com/devops839/AD_ArgoCD_AKS_Project" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>AWS_Jenkins_Pipeline</h3>
-                <p>This Jenkins pipeline automates the CI/CD process for a Java application. It includes Git checkout, Maven build and testing, SonarQube code analysis, artifact publishing to JFrog Artifactory, Docker image creation and scanning, and deployment to AWS EKS using Kubernetes.</p>
-                <a href="https://github.com/devops839/AWS_Jenkins_Pipeline" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Azure_Jenkins_Pipeline</h3>
-                <p>This Jenkins pipeline automates the CI/CD process for a voting application, covering code build, testing, SonarQube analysis, Docker image creation, Trivy vulnerability scanning, and deployment to AKS. It also manages artifact storage in JFrog Artifactory, Docker pushes to ACR, and includes automated deployment verification and email notifications.</p>
-                <a href="https://github.com/devops839/Azure_Jenkins_Pipeline" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>AD_DotNet_Project</h3>
-                <p>This project showcases a CI/CD pipeline for a .NET web application using Azure DevOps. It automates the build process by restoring dependencies, building the project, and packaging it for deployment. The pipeline then deploys the application to an Azure App Service, ensuring efficient and streamlined delivery.</p>
-                <a href="https://github.com/devops839/CoffeeShop-DotNet" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>AD_Java_Project</h3>
-                <p>This Azure DevOps pipeline automates the build and deployment of a Java voting application. It installs Java 17, performs SonarQube analysis to check code quality, compiles and packages the application using Maven, and builds a Docker image. The image is then scanned for vulnerabilities using Trivy, and finally, the image is pushed to Azure Container Registry. The pipeline ensures both code quality and security, providing a seamless, automated deployment process to Azure Kubernetes Service (AKS).</p>
-                <a href="https://github.com/devops839/AD_Java_Project" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Terraform_VM_Modules</h3>
-                <p>This pipeline automates the process of importing existing Azure resources into Terraform, followed by running terraform plan and terraform apply to synchronize resources with the state. Additionally, another pipeline automates the creation of an Azure virtual machine using Terraform, including initialization, planning, and applying the configuration for seamless VM deployment.</p>
-                <a href="https://github.com/devops839/Terraform_VM_Modules" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>AD_Template_Based_Project</h3>
-                <p>A template-based pipeline in Azure DevOps reuses pipeline configurations across multiple projects, ensuring consistency and reducing redundancy. By referencing templates and passing parameters, you can customize tasks like building, testing, and deployment.</p>
-                <a href="https://github.com/devops839/AzureDevOps_Template_Based_Project" target="_blank" class="btn">View Project</a>
+        <div class="container">
+            <h2>GitHub Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>ACR_AKS_Pipeline</h3>
+                    <p>This Azure DevOps pipeline automates the process of building a Docker image, pushing it to Azure Container Registry (ACR), and deploying it to an Azure Kubernetes Service (AKS) cluster. It triggers on commits to the main branch, builds and pushes the image, then updates the deployment in AKS with the new image tag</p>
+                    <a href="https://github.com/devops839/AD_ACR_AKS_Pipeline" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AD_ArgoCD_AKS_Project</h3>
+                    <p>This pipeline automates the build, scan, and deployment process for microservices in an Azure Kubernetes Service (AKS) cluster using ArgoCD. It includes SonarQube code analysis, Trivy security scans, Docker image builds, and pushes images to Azure Container Registry (ACR). After updating Kubernetes manifests, ArgoCD automatically deploys the application to AKS, with monitoring available through Grafana.</p>
+                    <a href="https://github.com/devops839/AD_ArgoCD_AKS_Project" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AWS_Jenkins_Pipeline</h3>
+                    <p>This Jenkins pipeline automates the CI/CD process for a Java application. It includes Git checkout, Maven build and testing, SonarQube code analysis, artifact publishing to JFrog Artifactory, Docker image creation and scanning, and deployment to AWS EKS using Kubernetes</p>
+                    <a href="https://github.com/devops839/AWS_Jenkins_Pipeline" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Azure_Jenkins_Pipeline</h3>
+                    <p>This Jenkins pipeline automates the CI/CD process for a voting application, covering code build, testing, SonarQube analysis, Docker image creation, Trivy vulnerability scanning, and deployment to AKS. It also manages artifact storage in JFrog Artifactory, Docker pushes to ACR, and includes automated deployment verification and email notifications</p>
+                    <a href="https://github.com/devops839/Azure_Jenkins_Pipeline" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AD_DotNet_Project</h3>
+                    <p>This project showcases a CI/CD pipeline for a .NET web application using Azure DevOps. It automates the build process by restoring dependencies, building the project, and packaging it for deployment. The pipeline then deploys the application to an Azure App Service, ensuring efficient and streamlined delivery</p>
+                    <a href="https://github.com/devops839/CoffeeShop-DotNet" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AD_Java_Project</h3>
+                    <p>This Azure DevOps pipeline automates the build and deployment of a Java voting application. It installs Java 17, performs SonarQube analysis to check code quality, compiles and packages the application using Maven, and builds a Docker image. The image is then scanned for vulnerabilities using Trivy, and finally, the image is pushed to Azure Container Registry. The pipeline ensures both code quality and security, providing a seamless, automated deployment process to Azure Kubernetes Service (AKS)</p>
+                    <a href="https://github.com/devops839/AD_Java_Project" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Terraform_VM_Modules</h3>
+                    <p>This pipeline automates the process of importing existing Azure resources into Terraform, followed by running terraform plan and terraform apply to synchronize resources with the state. Additionally, another pipeline automates the creation of an Azure virtual machine using Terraform, including initialization, planning, and applying the configuration for seamless VM deployment</p>
+                    <a href="https://github.com/devops839/Terraform_VM_Modules" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AD_Template_Based_Project</h3>
+                    <p>A template-based pipeline in Azure DevOps reuses pipeline configurations across multiple projects, ensuring consistency and reducing redundancy. By referencing templates and passing parameters, you can customize tasks like building, testing, and deployment</p>
+                    <a href="https://github.com/devops839/AzureDevOps_Template_Based_Project" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="contact-links">
-            <a href="mailto:pavankalluri@example.com">Email</a>
-            <a href="https://github.com/pavan" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/pavan" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/pavan" target="_blank">Instagram</a>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:pavank839@outlook.com">pavank839@outlook.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/pavan-kalluri-924b65321" target="_blank">LinkedIn</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/p_a_v_a_n_8_3_9/" target="_blank">Instagram</a></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Pavan Kalluri. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Pavan Kalluri. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
