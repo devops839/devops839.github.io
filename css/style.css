@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+    background: linear-gradient(135deg, #000000, #2d2d2d);
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -83,39 +83,39 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #1E90FF; /* Blue */
-    border-bottom: 2px solid #00FA9A; /* Mint */
+    color: #1E90FF;
+    border-bottom: 2px solid #00FA9A;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+    background: linear-gradient(135deg, #000000, #2d2d2d);
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #1E90FF; /* Blue */
+    color: #1E90FF;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #00FA9A; /* Mint */
+    color: #00FA9A;
 }
 
 /* About Section */
 .section {
     padding: 60px 0;
     text-align: center;
-    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+    background: linear-gradient(135deg, #000000, #2d2d2d);
 }
 
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1E90FF; /* Blue */
+    color: #1E90FF;
     position: relative;
 }
 
@@ -124,20 +124,20 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #00FA9A; /* Mint */
+    background: #00FA9A;
     margin: 10px auto;
 }
 
 .section p {
     font-size: 1.1rem;
-    color: #bbbbbb; /* Light Gray */
+    color: #bbbbbb;
     margin-bottom: 20px;
 }
 
 /* Button Styling */
 .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
+    background: linear-gradient(135deg, #00FA9A, #1E90FF);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -147,34 +147,34 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #1E90FF; /* Blue color for hover effect */
+    background: #1E90FF;
 }
 
-/* Specific Button Modifications */
 .about .btn, .project-card .btn {
-    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
+    background: linear-gradient(135deg, #00FA9A, #1E90FF);
     color: #ffffff;
 }
 
 .about .btn:hover, .project-card .btn:hover {
-    background: #1E90FF; /* Blue color for hover effect */
+    background: #1E90FF;
 }
 
-/* Project Section */
+/* Project Section - Updated for 4 Rows & 2 Columns */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns */
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
-    border: 1px solid #1E90FF; /* Blue Border */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #1E90FF;
     border-radius: 10px;
     padding: 20px;
+    text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
     overflow: hidden;
 }
 
@@ -186,7 +186,7 @@ header nav ul li a:hover {
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #1E90FF; /* Blue */
+    color: #1E90FF;
 }
 
 .project-card p {
@@ -197,12 +197,11 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+    background: linear-gradient(135deg, #000000, #2d2d2d);
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
-    border-top: 2px solid #1E90FF; /* Blue Border */
+    border-top: 2px solid #1E90FF;
 }
 
 footer ul {
@@ -220,7 +219,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #00FA9A; /* Mint */
+    color: #00FA9A;
 }
 
 footer p {
@@ -229,14 +228,14 @@ footer p {
 
 /* Contact Section */
 #contact a {
-    color: #00FA9A; /* Mint */
+    color: #00FA9A;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #1E90FF; /* Blue on hover */
+    color: #1E90FF;
 }
 
 /* Learn More and Download My Resume Section */
@@ -252,12 +251,12 @@ footer p {
 }
 
 .learn-resume a {
-    color: #00FA9A; /* Mint */
+    color: #00FA9A;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .learn-resume a:hover {
-    color: #1E90FF; /* Blue on hover */
+    color: #1E90FF;
 }
