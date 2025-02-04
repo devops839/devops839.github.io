@@ -51,9 +51,9 @@ nav ul li a:hover {
 
 /* Sections */
 .section {
-    padding: 80px 20px; /* Adjusted to reduce space */
+    padding: 60px 20px; /* Reduced padding to minimize excessive space */
     text-align: center;
-    margin-top: 60px; /* Prevent merging into header */
+    margin-top: 80px; /* Adjusted to ensure visibility */
 }
 
 .container {
@@ -112,5 +112,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+    margin-top: 20px; /* Reduced margin to ensure proper alignment */
 }
