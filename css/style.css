@@ -5,13 +5,14 @@ body {
     padding: 0;
     background-color: #d3d3d3; /* Light Gray Background */
     color: #333;
+    scroll-behavior: smooth; /* Ensures smooth scrolling */
 }
 
 /* Header */
 header {
     background-color: #000000; /* Dark Black */
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -31,6 +32,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -51,9 +53,10 @@ nav ul li a:hover {
 
 /* Sections */
 .section {
-    padding: 60px 20px; /* Reduced padding to minimize excessive space */
+    padding: 50px 20px; /* Reduced space */
     text-align: center;
-    margin-top: 80px; /* Adjusted to ensure visibility */
+    margin-top: 80px; /* Ensures section is not hidden behind header */
+    scroll-margin-top: 70px; /* Fixes button scrolling issue */
 }
 
 .container {
@@ -112,5 +115,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px; /* Reduced margin to ensure proper alignment */
+    margin-top: 20px;
 }
