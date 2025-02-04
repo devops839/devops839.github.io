@@ -1,90 +1,163 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: white;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Fonts and Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #000000, #1e1e1e); /* Dark Black Gradient */
+    color: #ffffff; /* White for text */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Container */
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    position: relative;
 }
 
 /* Header */
 header {
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
     padding: 20px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #1E90FF; /* Blue Border */
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
+header .profile-img {
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    border: 3px solid #00FA9A;
+    border: 5px solid #00FA9A; /* Mint */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    color: #1E90FF;
-    margin: 10px 0 5px;
+header .profile-img:hover {
+    transform: scale(1.1);
 }
 
-.job-title {
-    font-size: 18px;
-    color: #00FA9A;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E90FF; /* Blue */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header .job-title {
+    font-size: 1.2rem;
+    color: #00FA9A; /* Mint */
 }
 
-nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover {
-    color: #1E90FF;
+header nav ul li a:hover {
+    color: #1E90FF; /* Blue */
+    border-bottom: 2px solid #00FA9A; /* Mint */
 }
 
-/* Sections */
-.section {
-    padding: 50px 0;
-}
-
-h2 {
-    color: #1E90FF;
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #1E90FF; /* Blue */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #00FA9A; /* Mint */
+}
+
+/* About Section */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Blue */
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00FA9A; /* Mint */
+    margin: 10px auto;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #bbbbbb; /* Light Gray */
     margin-bottom: 20px;
 }
 
+/* Button Styling */
 .btn {
     display: inline-block;
+    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
+    color: #ffffff;
     padding: 10px 20px;
-    background-color: #00FA9A;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #1E90FF;
-    color: white;
+    background: #1E90FF; /* Blue color for hover effect */
+}
+
+/* Specific Button Modifications */
+.about .btn, .project-card .btn {
+    background: linear-gradient(135deg, #00FA9A, #1E90FF); /* Gradient Mint to Blue */
+    color: #ffffff;
+}
+
+.about .btn:hover, .project-card .btn:hover {
+    background: #1E90FF; /* Blue color for hover effect */
 }
 
 /* Project Section */
@@ -92,39 +165,99 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
 }
 
 .project-card {
-    background-color: #1a1a1a;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Subtle Frosted Effect */
+    border: 1px solid #1E90FF; /* Blue Border */
     border-radius: 10px;
-    border: 2px solid #00FA9A;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.project-card h3 {
-    color: #1E90FF;
-}
-
-.project-card p {
-    font-size: 14px;
-    color: #ccc;
-}
-
-.project-card a {
-    display: block;
-    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1E90FF; /* Blue */
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: black;
-    padding: 20px;
+    background: linear-gradient(135deg, #000000, #2d2d2d); /* Dark Black Gradient */
+    color: #ffffff;
     text-align: center;
+    padding: 20px 0;
+    position: relative;
+    border-top: 2px solid #1E90FF; /* Blue Border */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #00FA9A; /* Mint */
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+#contact a {
+    color: #00FA9A; /* Mint */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #1E90FF; /* Blue on hover */
+}
+
+/* Learn More and Download My Resume Section */
+.learn-resume {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.learn-resume p {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.learn-resume a {
+    color: #00FA9A; /* Mint */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-resume a:hover {
+    color: #1E90FF; /* Blue on hover */
 }
