@@ -67,11 +67,12 @@ nav ul li a:hover {
 
 /* About Section Fix */
 #about {
-    min-height: 100vh; /* Ensures visibility on all devices */
+    min-height: 100vh; /* Ensures full visibility */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 120px; /* Adjusted padding to prevent merging under header */
 }
 
 /* Buttons */
