@@ -29,23 +29,26 @@ h1, h2, h3 {
 h1 {
     font-size: 2rem;
     font-weight: 700;
+    color: #fff;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: 500;
+    color: #1E90FF;
 }
 
 h3 {
     font-size: 1.2rem;
     font-weight: 500;
+    color: #ddd;
 }
 
 /* Header */
 header {
     background-color: #000;
     padding: 20px 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #333;
 }
 
 header .container {
@@ -140,6 +143,7 @@ header nav ul li a:hover {
 #contact {
     background-color: #333;
     color: #fff;
+    padding: 40px 0;
 }
 
 #contact p a {
@@ -154,10 +158,21 @@ header nav ul li a:hover {
 /* Footer */
 footer {
     background-color: #000;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     color: #fff;
     font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #1E90FF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #00FA9A;
 }
 
 /* About Section */
@@ -198,4 +213,25 @@ footer {
 
 .view-project-btn:focus {
     outline: none;
+}
+
+/* Subtle Color Enhancements */
+.section:nth-child(odd) {
+    background-color: #121212; /* Darken odd sections for more contrast */
+}
+
+h2 {
+    color: #1E90FF; /* Lightens section headers for better readability */
+}
+
+.project-card {
+    background-color: #444; /* Slightly lighter project cards for more visibility */
+}
+
+.project-card h3 {
+    color: #1E90FF;
+}
+
+.project-card p {
+    color: #ccc; /* Subtle gray text for descriptions */
 }
