@@ -3,14 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d3d3d3; /* Light Gray Background */
-    color: #333;
-    scroll-behavior: smooth; /* Ensures smooth scrolling */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* Header */
 header {
-    background-color: #000000; /* Dark Black */
+    background: linear-gradient(90deg, #000000, #1E90FF);
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -19,14 +19,14 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .profile-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #1E90FF;
+    border: 3px solid #00FA9A;
 }
 
 nav ul {
@@ -42,22 +42,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1E90FF;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
     color: #00FA9A;
+    transform: scale(1.1);
 }
 
 /* Sections */
 .section {
-    padding: 40px 20px; /* Adjusted padding to remove extra space */
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 80px; /* Adjusted margin to fit header */
-    scroll-margin-top: 100px; /* Fixes button scrolling issue */
+    margin-top: 80px;
+    scroll-margin-top: 100px;
 }
 
 .container {
@@ -68,38 +69,46 @@ nav ul li a:hover {
 
 /* About Section Fix */
 #about {
-    min-height: 100vh; /* Ensures full visibility */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px; /* Adjusted padding to prevent merging under header */
+    padding-top: 120px;
+    background: linear-gradient(120deg, #232526, #414345);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 
 /* Projects Section Fix */
 #projects {
-    scroll-margin-top: 100px; /* Ensures Projects button scrolls to the correct position */
+    scroll-margin-top: 80px;
     padding-top: 40px;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #1E90FF;
+    background: linear-gradient(90deg, #1E90FF, #00FA9A);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
-    border: 2px solid #1E90FF;
-    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid #00FA9A;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background-color: #00FA9A;
-    border-color: #00FA9A;
-    transform: scale(1.05);
+    background: linear-gradient(90deg, #00FA9A, #1E90FF);
+    border-color: #1E90FF;
+    transform: scale(1.1);
 }
 
 .btn:active {
@@ -110,26 +119,27 @@ nav ul li a:hover {
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px; /* Reduced gap to minimize extra spacing */
+    gap: 20px;
     padding-top: 20px;
 }
 
 .project-card {
-    background-color: white;
-    padding: 15px;
+    background: linear-gradient(135deg, #ffffff, #d3d3d3);
+    color: #333;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
 footer {
-    background-color: #000000; /* Dark Black */
+    background: linear-gradient(90deg, #000000, #1E90FF);
     color: #fff;
     text-align: center;
     padding: 15px 0;
