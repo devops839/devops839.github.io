@@ -53,10 +53,10 @@ nav ul li a:hover {
 
 /* Sections */
 .section {
-    padding: 30px 20px; /* Reduced padding to remove extra space */
+    padding: 20px; /* Reduced padding to remove extra space */
     text-align: center;
-    margin-top: 90px; /* Adjusted margin to fit header */
-    scroll-margin-top: 80px; /* Fixes button scrolling issue */
+    margin-top: 80px; /* Adjusted margin to fit header */
+    scroll-margin-top: 100px; /* Fixes button scrolling issue */
 }
 
 .container {
@@ -72,7 +72,12 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px; /* Adjusted padding to prevent merging under header */
+    padding-top: 100px; /* Adjusted padding to prevent merging under header */
+}
+
+/* Projects Section Fix */
+#projects {
+    scroll-margin-top: 120px; /* Ensures Projects button scrolls to the correct position */
 }
 
 /* Buttons */
@@ -103,12 +108,12 @@ nav ul li a:hover {
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 15px; /* Reduced gap to minimize extra spacing */
 }
 
 .project-card {
     background-color: white;
-    padding: 20px;
+    padding: 15px; /* Reduced padding to save space */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -124,6 +129,6 @@ footer {
     background-color: #000000; /* Dark Black */
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     margin-top: 20px;
 }
