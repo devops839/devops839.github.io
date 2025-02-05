@@ -175,18 +175,19 @@ footer {
     background-color: #1E90FF;
 }
 
-/* View Project Button (Centered with Gradient) */
+/* Centered View Project Button with Gradient */
 .view-project-btn {
     background: linear-gradient(45deg, #1E90FF, #00FA9A);
     color: #fff;
     padding: 15px 25px;
     border-radius: 5px;
-    display: inline-block;
     font-weight: 600;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 20px auto; /* Centers the button */
+    display: block;  /* Makes it a block-level element */
+    width: max-content; /* Ensures the button's width is based on its content */
+    margin: 20px auto; /* Centers the button horizontally */
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
