@@ -35,13 +35,13 @@ h1 {
 h2 {
     font-size: 1.8rem;
     font-weight: 500;
-    color: #1E90FF;
+    color: #4BA3FF; /* Softer blue for headers */
 }
 
 h3 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #ddd;
+    color: #B0BEC5; /* Softer grey color */
 }
 
 /* Header */
@@ -79,7 +79,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #1E90FF;
+    color: #4BA3FF; /* Softer blue links */
     font-weight: 500;
     text-transform: uppercase;
     font-size: 1rem;
@@ -95,11 +95,11 @@ header nav ul li a:hover {
 }
 
 .section:nth-child(even) {
-    background-color: #1c1c1c;
+    background-color: #121212; /* Slightly darkened background for odd sections */
 }
 
 .btn {
-    background-color: #1E90FF;
+    background-color: #4BA3FF; /* Softer blue button */
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -112,7 +112,7 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #00FA9A;
+    background-color: #00FA9A; /* Softer mint hover effect */
 }
 
 .project-list {
@@ -122,7 +122,7 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background-color: #333;
+    background-color: #333; /* Lighter dark background for cards */
     padding: 20px;
     border-radius: 8px;
     flex: 1;
@@ -131,12 +131,12 @@ header nav ul li a:hover {
 }
 
 .project-card h3 {
-    color: #1E90FF;
+    color: #4BA3FF; /* Softer blue header for cards */
 }
 
 .project-card p {
     margin-bottom: 1rem;
-    color: #ddd;
+    color: #B0BEC5; /* Softer gray text for descriptions */
 }
 
 /* Contact Section */
@@ -147,12 +147,12 @@ header nav ul li a:hover {
 }
 
 #contact p a {
-    color: #1E90FF;
+    color: #4BA3FF; /* Softer blue for contact links */
     text-decoration: none;
 }
 
 #contact p a:hover {
-    color: #00FA9A;
+    color: #00FA9A; /* Softer mint hover effect */
 }
 
 /* Footer */
@@ -166,7 +166,7 @@ footer {
 }
 
 footer a {
-    color: #1E90FF;
+    color: #4BA3FF;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -177,7 +177,7 @@ footer a:hover {
 
 /* About Section */
 #about p {
-    color: #ddd;
+    color: #B0BEC5; /* Softer gray text for About section */
     line-height: 1.8;
 }
 
@@ -187,12 +187,12 @@ footer a:hover {
 }
 
 #about .btn:hover {
-    background-color: #1E90FF;
+    background-color: #4BA3FF;
 }
 
 /* Centered View Project Button with Gradient */
 .view-project-btn {
-    background: linear-gradient(45deg, #1E90FF, #00FA9A);
+    background: linear-gradient(45deg, #4BA3FF, #00FA9A);
     color: #fff;
     padding: 15px 25px;
     border-radius: 5px;
@@ -208,7 +208,7 @@ footer a:hover {
 
 .view-project-btn:hover {
     transform: scale(1.1); /* Slightly enlarges the button on hover */
-    background: linear-gradient(45deg, #00FA9A, #1E90FF);
+    background: linear-gradient(45deg, #00FA9A, #4BA3FF);
 }
 
 .view-project-btn:focus {
@@ -217,21 +217,21 @@ footer a:hover {
 
 /* Subtle Color Enhancements */
 .section:nth-child(odd) {
-    background-color: #121212; /* Darken odd sections for more contrast */
+    background-color: #1C1C1C; /* Slightly lighter dark sections for better contrast */
 }
 
 h2 {
-    color: #1E90FF; /* Lightens section headers for better readability */
+    color: #4BA3FF; /* Softer blue section header */
 }
 
 .project-card {
-    background-color: #444; /* Slightly lighter project cards for more visibility */
+    background-color: #444; /* Lightened project cards for better contrast */
 }
 
 .project-card h3 {
-    color: #1E90FF;
+    color: #4BA3FF; /* Softer blue card header */
 }
 
 .project-card p {
-    color: #ccc; /* Subtle gray text for descriptions */
+    color: #B0BEC5; /* Softer gray text for descriptions */
 }
