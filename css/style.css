@@ -53,16 +53,25 @@ nav ul li a:hover {
 
 /* Sections */
 .section {
-    padding: 50px 20px; /* Reduced space */
+    padding: 30px 20px; /* Reduced padding to remove extra space */
     text-align: center;
-    margin-top: 80px; /* Ensures section is not hidden behind header */
-    scroll-margin-top: 70px; /* Fixes button scrolling issue */
+    margin-top: 90px; /* Adjusted margin to fit header */
+    scroll-margin-top: 80px; /* Fixes button scrolling issue */
 }
 
 .container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
+}
+
+/* About Section Fix */
+#about {
+    min-height: 100vh; /* Ensures visibility on all devices */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Buttons */
