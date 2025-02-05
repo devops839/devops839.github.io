@@ -3,14 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
+    background: linear-gradient(135deg, #141e30, #243b55); /* Enhanced Gradient Background */
     color: #fff;
     scroll-behavior: smooth;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #000000, #1E90FF);
+    background: linear-gradient(90deg, #000428, #004e92);
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00FA9A;
+    color: #FFD700;
     transform: scale(1.1);
 }
 
@@ -95,19 +95,19 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(90deg, #1E90FF, #00FA9A);
+    background: linear-gradient(90deg, #FF416C, #FF4B2B);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
-    border: 2px solid #00FA9A;
+    border: 2px solid #FFD700;
     transition: background 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #00FA9A, #1E90FF);
-    border-color: #1E90FF;
+    background: linear-gradient(90deg, #FFD700, #FF4B2B);
+    border-color: #FF416C;
     transform: scale(1.1);
 }
 
@@ -139,9 +139,30 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #000000, #1E90FF);
+    background: linear-gradient(90deg, #000428, #004e92);
     color: #fff;
     text-align: center;
     padding: 15px 0;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #FFD700;
+    font-size: 24px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #FF4B2B;
 }
